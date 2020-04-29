@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
     .then(users => {
       res.json(users);
     })
-    .catch(err => res.send(err));
+    .catch(err => console.log (err))
   // } else {
   //   res.status(401).json({ message: 'not logged in' })
   // }
